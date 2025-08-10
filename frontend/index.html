@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Collaborative To-Do List</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div id="app">
+        <h2>Collaborative To-Do List</h2>
+
+        <!-- Nickname Form -->
+        <form id="nickname-form">
+            <input id="nickname" type="text" placeholder="Enter your nickname" required maxlength="16" />
+            <button id="set-nickname">Join</button>
+        </form>
+
+        <!-- Connected Users -->
+        <div id="users"></div>
+
+        <!-- Task Form -->
+        <form id="task-form" style="display:none;">
+            <input id="task-input" type="text" placeholder="New task..." maxlength="60" required />
+            <select id="assignee-select"></select>
+            <button id="add-task">Add</button>
+        </form>
+
+        <!-- Task List -->
+        <ul id="tasks"></ul>
+
+        <!-- Notifications -->
+        <div id="notifications"></div>
+    </div>
+
+    <!-- Link JS -->
+    <script src="script.js"></script>
+</body>
+
+</html>
